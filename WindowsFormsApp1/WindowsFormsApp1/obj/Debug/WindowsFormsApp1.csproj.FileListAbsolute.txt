@@ -1,0 +1,15 @@
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EasyModbus.dll
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EasyModbus.xml
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\AllayBro\Desktop\УЧЕБА\ПО С#\Практика\Visual Studio\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
