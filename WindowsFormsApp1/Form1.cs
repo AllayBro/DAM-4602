@@ -127,6 +127,10 @@ namespace WindowsFormsApp1
             UpdateSeriesVisibility();
             LoadLastLinkConfig();
             _uiReady = true;
+
+            // ВКЛЮЧАЕМ 3D
+            chart1.ChartAreas[0].Area3DStyle.Enable3D = true;
+            // ======================================
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -188,6 +192,13 @@ namespace WindowsFormsApp1
             SetLinkControlsVisible(true);
             btnRead.Enabled = true;
             btnBigStart.BringToFront();
+        }
+         //точка 1.1.1
+        private void AddPointToChart2()
+        {
+            chart2.Series["Series1"].Points.Clear();
+            chart2.Series["Series1"].Points.AddXY(1, 1);
+            chart2.Invalidate();
         }
 
         private void ShowGraphMode()
@@ -1598,7 +1609,7 @@ namespace WindowsFormsApp1
                     continue;
 
                 long tSec = ToTimeSec(x.Index, x.IntervalMs);
-                sb.AppendLine($"{x.Channel};{tSec};{x.Value:F6};{x.Unit}");
+                sb.AppendLine($"{x.Channel};{tSec};{x.Value.ToString("F6", CultureInfo.InvariantCulture)};{x.Unit}");
                 any = true;
             }
 
@@ -2370,7 +2381,7 @@ private void DisableDirectMode()
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            AddPointToChart2();
         }
 
         private void btnSaveToDevice_Click(object sender, EventArgs e)
@@ -2435,6 +2446,11 @@ private void DisableDirectMode()
         }
 
         private void checkDirectMode_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart2_Click(object sender, EventArgs e)
         {
 
         }

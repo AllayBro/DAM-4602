@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelChannelsBottom = new System.Windows.Forms.Panel();
@@ -72,6 +78,10 @@
             this.btnRefreshPorts = new System.Windows.Forms.Button();
             this.btnBigStart = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.chart3D = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage2.SuspendLayout();
             this.panelChannelsBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridChannels)).BeginInit();
@@ -80,6 +90,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -536,6 +550,8 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -543,10 +559,72 @@
             this.tabControl1.Size = new System.Drawing.Size(882, 553);
             this.tabControl1.TabIndex = 21;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.chart2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(874, 524);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Значения";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.chart3D);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(874, 524);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Положение";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // chart3D
+            // 
+            chartArea3.Area3DStyle.Enable3D = true;
+            chartArea3.Area3DStyle.IsClustered = true;
+            chartArea3.Name = "ChartArea1";
+            this.chart3D.ChartAreas.Add(chartArea3);
+            this.chart3D.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend2.Name = "Legend1";
+            this.chart3D.Legends.Add(legend2);
+            this.chart3D.Location = new System.Drawing.Point(3, 3);
+            this.chart3D.Name = "chart3D";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart3D.Series.Add(series3);
+            this.chart3D.Size = new System.Drawing.Size(868, 518);
+            this.chart3D.TabIndex = 1;
+            this.chart3D.Text = "chart2";
+            // 
+            // chart2
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(3, 3);
+            this.chart2.Name = "chart2";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
+            this.chart2.Size = new System.Drawing.Size(868, 518);
+            this.chart2.TabIndex = 0;
+            this.chart2.Text = "chart2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(882, 553);
             this.Controls.Add(this.tabControl1);
             this.MinimumSize = new System.Drawing.Size(900, 600);
@@ -564,6 +642,10 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart3D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -572,6 +654,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panelChannelsBottom;
+        private System.Windows.Forms.CheckBox checkDirectMode;
         private System.Windows.Forms.Button btnUpdateChannels;
         private System.Windows.Forms.Button btnLoadConfigFile;
         private System.Windows.Forms.Button btnSaveVah;
@@ -585,12 +668,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colCurrent;
         private System.Windows.Forms.DataGridViewTextBoxColumn colUnit;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelStartMode;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnRead;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.CheckBox checkAutoScaleY;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnWriteConfig;
         private System.Windows.Forms.Button btnLoadConfig;
@@ -605,11 +690,12 @@
         private System.Windows.Forms.ComboBox comboPorts;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRefreshPorts;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Panel panelStartMode;
         private System.Windows.Forms.Button btnBigStart;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.CheckBox checkDirectMode;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3D;
     }
 }
 
